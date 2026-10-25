@@ -10,9 +10,12 @@ from the repository root to check those exact bytes.
 | Local environment | Configure/build | CTest | Install and installed checker |
 |---|---|---|---|
 | Windows 11, MSVC 19.50, GMP 6.3, Python 3.14 | pass | 10/10, 146.81 s | pass; release GMP DLL hashes match the release dependencies |
-| Ubuntu 24.04 container, GCC 13.3, Python 3.12.3 | pass | 10/10, 94.37 s | pass |
+| Ubuntu 24.04 container, GCC 13.3, Python 3.12.3 | pass | 10/10, 94.29 s | pass |
 | Ubuntu 24.04 container, Clang 18.1.3, Python 3.12.3 | pass | 10/10, 102.39 s | pass |
 | Ubuntu 24.04 container, GCC 13.3, ASan + UBSan | pass | 10/10, 125.78 s; no sanitizer reports | pass |
+
+A fresh Windows build of the exported candidate also passed all 10 tests in 77.50 s; its
+code/configuration/example manifest is identical to the one above.
 
 Times are single runs under concurrent load, not performance guarantees. Containers used an existing
 dependency image with networking disabled. Windows used the explicit release-library paths in README.

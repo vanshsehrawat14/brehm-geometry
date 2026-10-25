@@ -209,8 +209,9 @@ What is **proved for each output** that passes the checks (SPEC §4–§6):
    certificate valid), and the tests show the evaluator catching one.
 
 What these proofs **assume**: Brehm's theorems as stated in SPEC §6 (B1–B3), the transcription of
-his construction in SPEC §2 (not yet checked against the paper independently), and that the checkers and the
-evaluator do what SPEC says (unverified code with tests, below). No proof of the C++ code exists.
+his construction in SPEC §2, and that the checkers and the
+evaluator do what SPEC says (unverified code with tests, below). Independent AI audits have checked
+the transcription against the paper; independent human review remains outstanding. No proof of the C++ code exists.
 
 What is **tested, not proved**: that `construct` succeeds and is correct on inputs not yet run;
 evaluator termination (it can answer "undecided", exit 4, never a wrong verdict).
@@ -224,9 +225,22 @@ the C++ output must equal the Python reference's on every example without constr
 
 ## Examples and tests
 
+For a complete small example, run from this checkout after building (on Windows, use
+`python` and `build/Release/brehm_cpp.exe`):
+
+```
+build/brehm_cpp construct examples/regression_line.json line_cert.json
+build/brehm_cpp check line_cert.json
+python3 tools/ref_check.py line_cert.json --instance examples/regression_line.json
+python3 tools/brehm_eval.py line_cert.json --instance examples/regression_line.json
+python3 tools/brehm_figure.py line_cert.json line.svg --exe build/brehm_cpp
+```
+
+All five commands should exit 0; the constructor reports 37 cells. Open `line.svg` in a browser.
+
 `examples/` holds 31 instances, each with a `note` and an `expect`: ordinary, degenerate
 (duplicates, collinear, collapse, boundary sources, `10^30` coordinates, slivers, decimals),
-adversarial (insertion orders that produce many cells), options, nine invalid inputs, and two
+insertion-order comparisons, options, nine invalid inputs, and two
 regression instances with stored certificates.
 
 ```
@@ -262,8 +276,8 @@ allocation failures currently return exit 3; an operating system can kill a proc
   shared assumptions). An independent human review of SPEC §4–§6 is still needed.
 * The independent Python tools are slow on large certificates. The evaluator may return
   undecided (exit 4); successful certification of every admissible input is not promised.
-* No other implementation of Brehm's construction was found to compare against, apart from the
-  Python reference in `python/core`, which has the same author.
+* No other published software implementation was identified in the bounded literature search.
+  Private AI audits compared separately written constructors; this is not external human validation.
 
 ## Development and AI use
 

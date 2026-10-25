@@ -214,9 +214,9 @@ E2 does not assume that `f_n` is affine on `K`; it proves it. In particular:
 proves that the certificate equals Brehm's `f_n` for the recorded `(order, g, L)`, using neither
 constructor. With `--instance`, `brehm_eval.py` also checks that the certificate's pairs and recorded
 choices are the instance's (defaults resolved as `brehm_cpp` resolves them). Assumed: (B1)–(B3) from
-the paper; the transcription in §2, checked against the paper but not yet independently; and that
-`brehm_eval.py` implements E3. It is unverified Python, tested by 31 examples, 2,350 fuzz instances
-and the mutation and attack tests.
+the paper; the transcription in §2, checked against the paper by independent AI audits but not yet
+by an independent human; and that `brehm_eval.py` implements E3. It is unverified Python.
+The tests executed on this candidate are recorded in [VALIDATION.md](VALIDATION.md).
 
 **What Brehm's uniqueness statement establishes.** Remark 2 (p. 192) says each step is forced:
 given `f_i` (hence `U_i`) and the new pair, `f_{i+1}` is the only distance-reducing extension of
@@ -231,7 +231,7 @@ does not make the output independent of `g`, `r` or the order. All three are exp
 |---|---|---|
 | `brehm_cpp construct` | **yes, structurally**: `n − 1` insertions, each visits every current cell once with a bounded number of exact operations per vertex; no data-dependent loops. At most `9·2^{n−1}` cells (each cell gives at most a kept part and a cone) | memory and time grow with cells and bit length (the cell bound is exponential; a tight worst-case bound is not established here); no limit is enforced. The only internal exception, a degenerate cone, is unreachable: it needs `a` on the bisector `u·x = c`, but `c − u·a = |u|²/2 > 0` whenever `u ≠ 0` |
 | `brehm_cpp check`, `ref_check.py` | **yes**: finite loops over cells, edges, slabs and cell pairs | memory and time only |
-| `brehm_eval.py` | **not proved.** The exit search starts from the bracket `[1, t_C]` (`t_C` where the ray leaves `C`; the discrepancy is `≤ 0` there by (B3)), so there is no unbounded doubling phase. Within the bracket it has a step budget of `400 + 8·(bit length of the numbers involved)`. On a piecewise affine `f_k` it succeeds once both bracket ends lie on the piece that holds the exit, which takes `O(bits)` halvings; that is an argument, not a proof | budget exhausted: **exit 4, "undecided"**, never a verdict. Seen once before the 16 October fix (a search for a hint at 5,000-digit coordinates); none since, in 31 examples, 2,350 fuzz instances and the attack tests |
+| `brehm_eval.py` | **successful certification is not proved for every admissible input.** The exit search starts from the bracket `[1, t_C]` (`t_C` where the ray leaves `C`; the discrepancy is `≤ 0` there by (B3)), so there is no unbounded doubling phase. Within the bracket it has a step budget of `400 + 8·(bit length of the numbers involved)`. On a piecewise affine `f_k` it succeeds once both bracket ends lie on the piece that holds the exit, which takes `O(bits)` halvings; that is an argument, not a proof | budget exhausted: **exit 4, "undecided"**, never a verdict. Optional interior sampling (`--points`) uses rejection sampling without a fixed iteration limit. Current finite test results are in VALIDATION.md |
 
 **Exit codes** (all four command-line tools): 0 ok, accepted or agrees; 1 rejected (a certificate
 that fails R1–R6, or disagrees with Brehm's map); 2 usage; 3 invalid input (unreadable file, number
