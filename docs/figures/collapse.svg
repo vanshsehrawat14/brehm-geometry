@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="714" viewBox="0 0 1000 714" font-family="sans-serif" font-size="12">
+<title>degenerate_collapse_cert.json</title>
+<desc>{"tool": "brehm_figure.py", "certificate": "degenerate_collapse_cert.json", "sha256": "95e66db043f141432d73adf728fe1f7686e8613ff30ebb9db62f1c9e2b1af969", "cells": 35, "verified": true, "zoom": [], "scale_px_per_unit": "230", "paper_transform": ["250", "300"], "image_transform": ["1927134424963/2669934744", "40665060/130573"], "rounding": "every coordinate rounded to 0.001 px"}</desc>
+<defs><pattern id="reversed" patternUnits="userSpaceOnUse" width="5" height="5" patternTransform="rotate(45)"><path d="M0 0v5" stroke="#1b2a41" stroke-width="1.4" stroke-opacity="0.45"/></pattern><clipPath id="paper-panel"><rect x="20" y="70" width="460" height="460"/></clipPath><clipPath id="image-panel"><rect x="520" y="70" width="460" height="460"/></clipPath></defs>
+<rect width="1000" height="714" fill="#ffffff"/>
+<text x="20" y="22" font-size="15" font-weight="bold">degenerate_collapse_cert.json: 5 pairs, 35 cells, 35 faces (regions with one isometry)</text>
+<text x="20" y="42" font-size="12">order 0,1,2,3,4; g = id; L = 6 · certificate accepted by brehm_cpp check (R1–R6)</text>
+<text x="20" y="62" font-size="12">Paper D cut into the certificate's cells</text>
+<rect x="20" y="70" width="460" height="460" fill="none" stroke="#d0d0d0"/>
+<text x="520" y="62" font-size="12">Image F(D) at the same scale: all cells translucent, no layer order</text>
+<rect x="520" y="70" width="460" height="460" fill="none" stroke="#d0d0d0"/>
+<g id="paper" clip-path="url(#paper-panel)">
+<g fill="#f4ecd2" stroke="none">
+<polygon points="20,260.718 112,242.5 20,165.888"><title>cell 0</title></polygon>
+<polygon points="94.484,70 118.227,104.19 250,146.667 142.843,70"><title>cell 1</title></polygon>
+<polygon points="65.334,70 56.525,70 112,242.5"><title>cell 5</title></polygon>
+<polygon points="480,530 480,526.981 365,376.667 377.778,530"><title>cell 6</title></polygon>
+<polygon points="188.75,320.05 20,342.55 20,530 272.361,530 252.167,408.833"><title>cell 7</title></polygon>
+<polygon points="112,242.5 188.75,320.05 202.599,275.733"><title>cell 10</title></polygon>
+<polygon points="213.385,241.218 118.227,104.19 112,242.5"><title>cell 12</title></polygon>
+<polygon points="240.78,232.999 213.385,241.218 202.599,275.733 296,300"><title>cell 13</title></polygon>
+<polygon points="296,300 252.167,408.833 350.621,320.225"><title>cell 16</title></polygon>
+<polygon points="304.191,213.976 250,146.667 240.78,232.999"><title>cell 17</title></polygon>
+<polygon points="20,93.108 20,153.963 112,242.5"><title>cell 19</title></polygon>
+<polygon points="324.21,70 152.825,70 250,146.667"><title>cell 20</title></polygon>
+<polygon points="480,229.893 480,203.783 350.621,320.225 365,376.667"><title>cell 22</title></polygon>
+<polygon points="480,184.179 480,161.233 304.191,213.976 296,300"><title>cell 25</title></polygon>
+<polygon points="349.923,70 250,146.667 443.241,70"><title>cell 27</title></polygon>
+<polygon points="480,256.653 365,376.667 480,507.804"><title>cell 28</title></polygon>
+<polygon points="480,184.481 296,300 480,184.783"><title>cell 32</title></polygon>
+<polygon points="480,118.801 250,146.667 480,141.811"><title>cell 33</title></polygon>
+</g>
+<g fill="#c9dbee" stroke="none">
+<polygon points="118.227,104.19 94.484,70 65.334,70 112,242.5"><title>cell 2 (reversed)</title></polygon>
+<polygon points="20,153.963 20,165.888 112,242.5"><title>cell 3 (reversed)</title></polygon>
+<polygon points="152.825,70 142.843,70 250,146.667"><title>cell 4 (reversed)</title></polygon>
+<polygon points="112,242.5 20,260.718 20,342.55 188.75,320.05"><title>cell 8 (reversed)</title></polygon>
+<polygon points="296,300 202.599,275.733 188.75,320.05 252.167,408.833"><title>cell 9 (reversed)</title></polygon>
+<polygon points="213.385,241.218 240.78,232.999 250,146.667 118.227,104.19"><title>cell 11 (reversed)</title></polygon>
+<polygon points="112,242.5 202.599,275.733 213.385,241.218"><title>cell 14 (reversed)</title></polygon>
+<polygon points="377.778,530 365,376.667 350.621,320.225 252.167,408.833 272.361,530"><title>cell 15 (reversed)</title></polygon>
+<polygon points="304.191,213.976 240.78,232.999 296,300"><title>cell 18 (reversed)</title></polygon>
+<polygon points="56.525,70 20,70 20,93.108 112,242.5"><title>cell 21 (reversed)</title></polygon>
+<polygon points="480,184.783 296,300 350.621,320.225 480,203.783"><title>cell 23 (reversed)</title></polygon>
+<polygon points="480,161.233 480,141.811 250,146.667 304.191,213.976"><title>cell 24 (reversed)</title></polygon>
+<polygon points="480,507.804 365,376.667 480,526.981"><title>cell 26 (reversed)</title></polygon>
+<polygon points="480,70 443.241,70 250,146.667 480,118.801"><title>cell 29 (reversed)</title></polygon>
+<polygon points="349.923,70 324.21,70 250,146.667"><title>cell 30 (reversed)</title></polygon>
+<polygon points="480,256.653 480,229.893 365,376.667"><title>cell 31 (reversed)</title></polygon>
+<polygon points="480,184.481 480,184.179 296,300"><title>cell 34 (reversed)</title></polygon>
+</g>
+<path fill="none" stroke-linecap="round" stroke="#000000" stroke-width="1.3" d="M20 530L272.361 530M272.361 530L377.778 530M377.778 530L480 530M20 70L56.525 70M56.525 70L65.334 70M65.334 70L94.484 70M94.484 70L142.843 70M142.843 70L152.825 70M152.825 70L324.21 70M324.21 70L349.923 70M349.923 70L443.241 70M443.241 70L480 70M20 530L20 342.55M20 342.55L20 260.718M20 260.718L20 165.888M20 165.888L20 153.963M20 153.963L20 93.108M20 93.108L20 70M480 530L480 526.981M480 526.981L480 507.804M480 507.804L480 256.653M480 256.653L480 229.893M480 229.893L480 203.783M480 203.783L480 184.783M480 184.783L480 184.481M480 184.481L480 184.179M480 184.179L480 161.233M480 161.233L480 141.811M480 141.811L480 118.801M480 118.801L480 70"/>
+<path fill="none" stroke-linecap="round" stroke="#c0392b" stroke-width="1.1" d="M112 242.5L213.385 241.218M250 146.667L480 141.811M250 146.667L480 118.801M20 342.55L188.75 320.05M20 260.718L112 242.5M213.385 241.218L240.78 232.999M240.78 232.999L304.191 213.976M304.191 213.976L480 161.233M250 146.667L443.241 70M296 300L480 184.783M296 300L480 184.481M296 300L480 184.179M250 146.667L349.923 70M252.167 408.833L350.621 320.225M350.621 320.225L480 203.783M250 146.667L324.21 70M365 376.667L480 256.653M365 376.667L480 229.893M252.167 408.833L296 300M188.75 320.05L202.599 275.733M202.599 275.733L213.385 241.218M240.78 232.999L250 146.667M296 300L304.191 213.976M112 242.5L118.227 104.19M377.778 530L365 376.667M272.361 530L252.167 408.833M365 376.667L350.621 320.225M112 242.5L65.334 70M112 242.5L56.525 70M112 242.5L20 93.108M213.385 241.218L118.227 104.19M118.227 104.19L94.484 70M252.167 408.833L188.75 320.05M480 526.981L365 376.667M304.191 213.976L250 146.667M296 300L240.78 232.999M480 507.804L365 376.667M188.75 320.05L112 242.5M112 242.5L20 153.963M112 242.5L20 165.888M250 146.667L152.825 70M250 146.667L142.843 70M350.621 320.225L296 300M202.599 275.733L112 242.5M250 146.667L118.227 104.19M296 300L202.599 275.733"/>
+<circle cx="135" cy="415" r="2.6" fill="#000000"/>
+<text x="135" y="415" dx="4" dy="-4" font-size="11">0</text>
+<circle cx="365" cy="376.667" r="2.6" fill="#000000"/>
+<text x="365" y="376.667" dx="4" dy="-4" font-size="11">1</text>
+<circle cx="250" cy="146.667" r="2.6" fill="#000000"/>
+<text x="250" y="146.667" dx="4" dy="-4" font-size="11">2</text>
+<circle cx="296" cy="300" r="2.6" fill="#000000"/>
+<text x="296" y="300" dx="4" dy="-4" font-size="11">3</text>
+<circle cx="112" cy="242.5" r="2.6" fill="#000000"/>
+<text x="112" y="242.5" dx="4" dy="-4" font-size="11">4</text>
+<text x="50.667" y="223.035" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">0</text>
+<text x="151.388" y="97.714" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">1</text>
+<text x="97.511" y="121.673" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">2</text>
+<text x="50.667" y="187.451" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">3</text>
+<text x="181.889" y="95.556" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">4</text>
+<text x="77.953" y="127.5" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">5</text>
+<text x="425.694" y="490.912" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">6</text>
+<text x="150.656" y="426.287" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">7</text>
+<text x="85.188" y="291.455" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">8</text>
+<text x="234.879" y="326.154" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">9</text>
+<text x="167.783" y="279.428" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">10</text>
+<text x="205.598" y="181.269" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">11</text>
+<text x="147.871" y="195.969" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">12</text>
+<text x="238.191" y="262.487" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">13</text>
+<text x="175.995" y="253.15" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">14</text>
+<text x="323.585" y="433.145" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">15</text>
+<text x="299.596" y="343.019" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">16</text>
+<text x="264.99" y="197.881" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">17</text>
+<text x="280.324" y="248.992" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">18</text>
+<text x="50.667" y="163.191" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">19</text>
+<text x="242.345" y="95.556" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">20</text>
+<text x="52.131" y="118.902" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">21</text>
+<text x="418.905" y="282.642" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">22</text>
+<text x="401.655" y="252.198" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">23</text>
+<text x="378.548" y="165.922" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">24</text>
+<text x="390.048" y="214.847" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">25</text>
+<text x="441.667" y="470.484" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">26</text>
+<text x="347.721" y="95.556" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">27</text>
+<text x="441.667" y="380.375" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">28</text>
+<text x="413.31" y="101.367" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">29</text>
+<text x="308.045" y="95.556" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">30</text>
+<text x="441.667" y="287.738" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">31</text>
+<text x="418.667" y="223.088" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">32</text>
+<text x="403.333" y="135.759" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">33</text>
+<text x="418.667" y="222.887" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">34</text>
+</g>
+<g id="image" clip-path="url(#image-panel)">
+<g fill="#1b2a41" fill-opacity="0.2" stroke="none">
+<polygon points="628.232,317.959 721.791,311.435 640.138,223.879"><title>cell 0</title></polygon>
+<polygon points="583.148,207.314 600.154,245.308 721.791,311.435 630.672,216.263"><title>cell 1</title></polygon>
+<polygon points="600.154,245.308 583.148,207.314 598.209,182.356 721.791,311.435"><title>cell 2 (reversed)</title></polygon>
+<polygon points="628.232,224.548 640.138,223.879 721.791,311.435"><title>cell 3 (reversed)</title></polygon>
+<polygon points="632.091,226.144 630.672,216.263 721.791,311.435"><title>cell 4 (reversed)</title></polygon>
+<polygon points="598.209,182.356 590.476,186.575 721.791,311.435"><title>cell 5</title></polygon>
+<polygon points="860.284,443.934 859.791,440.955 721.791,311.435 759.433,460.625"><title>cell 6</title></polygon>
+<polygon points="775.541,216.485 606.791,238.985 606.791,426.435 859.152,426.435 838.958,305.269"><title>cell 7</title></polygon>
+<polygon points="721.791,311.435 628.232,317.959 606.791,238.985 775.541,216.485"><title>cell 8 (reversed)</title></polygon>
+<polygon points="721.791,311.435 729.127,215.213 775.541,216.485 838.958,305.269"><title>cell 9 (reversed)</title></polygon>
+<polygon points="721.791,311.435 775.541,216.485 729.127,215.213"><title>cell 10</title></polygon>
+<polygon points="765.007,219.713 777.949,245.219 721.791,311.435 600.154,245.308"><title>cell 11 (reversed)</title></polygon>
+<polygon points="765.007,219.713 600.154,245.308 721.791,311.435"><title>cell 12</title></polygon>
+<polygon points="777.949,245.219 765.007,219.713 729.127,215.213 721.791,311.435"><title>cell 13</title></polygon>
+<polygon points="721.791,311.435 729.127,215.213 765.007,219.713"><title>cell 14 (reversed)</title></polygon>
+<polygon points="759.433,460.625 721.791,311.435 717.087,253.381 838.958,305.269 859.152,426.435"><title>cell 15 (reversed)</title></polygon>
+<polygon points="721.791,311.435 838.958,305.269 717.087,253.381"><title>cell 16</title></polygon>
+<polygon points="714.813,225.305 721.791,311.435 777.949,245.219"><title>cell 17</title></polygon>
+<polygon points="714.813,225.305 777.949,245.219 721.791,311.435"><title>cell 18 (reversed)</title></polygon>
+<polygon points="627.15,163.703 628.232,224.548 721.791,311.435"><title>cell 19</title></polygon>
+<polygon points="802.748,241.93 632.091,226.144 721.791,311.435"><title>cell 20</title></polygon>
+<polygon points="590.476,186.575 606.333,153.671 627.15,163.703 721.791,311.435"><title>cell 21 (reversed)</title></polygon>
+<polygon points="859.791,186.042 864.172,160.303 717.087,253.381 721.791,311.435"><title>cell 22</title></polygon>
+<polygon points="882.465,165.44 721.791,311.435 717.087,253.381 864.172,160.303"><title>cell 23 (reversed)</title></polygon>
+<polygon points="878.69,142.632 892.053,156.728 721.791,311.435 714.813,225.305"><title>cell 24 (reversed)</title></polygon>
+<polygon points="882.703,165.223 878.69,142.632 714.813,225.305 721.791,311.435"><title>cell 25</title></polygon>
+<polygon points="840.711,439.028 721.791,311.435 859.791,440.955"><title>cell 26 (reversed)</title></polygon>
+<polygon points="804.281,216.263 721.791,311.435 895.697,197.522"><title>cell 27</title></polygon>
+<polygon points="833.102,187.993 721.791,311.435 840.711,439.028"><title>cell 28</title></polygon>
+<polygon points="916.852,167.46 895.697,197.522 721.791,311.435 876.942,139.375"><title>cell 29 (reversed)</title></polygon>
+<polygon points="804.281,216.263 802.748,241.93 721.791,311.435"><title>cell 30 (reversed)</title></polygon>
+<polygon points="833.102,187.993 859.791,186.042 721.791,311.435"><title>cell 31 (reversed)</title></polygon>
+<polygon points="882.411,165.142 721.791,311.435 882.465,165.44"><title>cell 32</title></polygon>
+<polygon points="876.942,139.375 721.791,311.435 892.053,156.728"><title>cell 33</title></polygon>
+<polygon points="882.411,165.142 882.703,165.223 721.791,311.435"><title>cell 34 (reversed)</title></polygon>
+</g><g fill="url(#reversed)" stroke="none">
+<polygon points="600.154,245.308 583.148,207.314 598.209,182.356 721.791,311.435"/>
+<polygon points="628.232,224.548 640.138,223.879 721.791,311.435"/>
+<polygon points="632.091,226.144 630.672,216.263 721.791,311.435"/>
+<polygon points="721.791,311.435 628.232,317.959 606.791,238.985 775.541,216.485"/>
+<polygon points="721.791,311.435 729.127,215.213 775.541,216.485 838.958,305.269"/>
+<polygon points="765.007,219.713 777.949,245.219 721.791,311.435 600.154,245.308"/>
+<polygon points="721.791,311.435 729.127,215.213 765.007,219.713"/>
+<polygon points="759.433,460.625 721.791,311.435 717.087,253.381 838.958,305.269 859.152,426.435"/>
+<polygon points="714.813,225.305 777.949,245.219 721.791,311.435"/>
+<polygon points="590.476,186.575 606.333,153.671 627.15,163.703 721.791,311.435"/>
+<polygon points="882.465,165.44 721.791,311.435 717.087,253.381 864.172,160.303"/>
+<polygon points="878.69,142.632 892.053,156.728 721.791,311.435 714.813,225.305"/>
+<polygon points="840.711,439.028 721.791,311.435 859.791,440.955"/>
+<polygon points="916.852,167.46 895.697,197.522 721.791,311.435 876.942,139.375"/>
+<polygon points="804.281,216.263 802.748,241.93 721.791,311.435"/>
+<polygon points="833.102,187.993 859.791,186.042 721.791,311.435"/>
+<polygon points="882.411,165.142 882.703,165.223 721.791,311.435"/>
+</g>
+<path fill="none" stroke-linecap="round" stroke="#000000" stroke-width="1.3" d="M606.791 426.435L859.152 426.435M859.152 426.435L759.433 460.625M759.433 460.625L860.284 443.934M606.333 153.671L590.476 186.575M590.476 186.575L598.209 182.356M598.209 182.356L583.148 207.314M583.148 207.314L630.672 216.263M630.672 216.263L632.091 226.144M632.091 226.144L802.748 241.93M802.748 241.93L804.281 216.263M804.281 216.263L895.697 197.522M895.697 197.522L916.852 167.46M606.791 426.435L606.791 238.985M606.791 238.985L628.232 317.959M628.232 317.959L640.138 223.879M640.138 223.879L628.232 224.548M628.232 224.548L627.15 163.703M627.15 163.703L606.333 153.671M860.284 443.934L859.791 440.955M859.791 440.955L840.711 439.028M840.711 439.028L833.102 187.993M833.102 187.993L859.791 186.042M859.791 186.042L864.172 160.303M864.172 160.303L882.465 165.44M882.465 165.44L882.411 165.142M882.411 165.142L882.703 165.223M882.703 165.223L878.69 142.632M878.69 142.632L892.053 156.728M892.053 156.728L876.942 139.375M876.942 139.375L916.852 167.46"/>
+<path fill="none" stroke-linecap="round" stroke="#c0392b" stroke-width="1.1" d="M721.791 311.435L765.007 219.713M721.791 311.435L892.053 156.728M721.791 311.435L876.942 139.375M606.791 238.985L775.541 216.485M628.232 317.959L721.791 311.435M765.007 219.713L777.949 245.219M777.949 245.219L714.813 225.305M714.813 225.305L878.69 142.632M721.791 311.435L895.697 197.522M721.791 311.435L882.465 165.44M721.791 311.435L882.411 165.142M721.791 311.435L882.703 165.223M721.791 311.435L804.281 216.263M838.958 305.269L717.087 253.381M717.087 253.381L864.172 160.303M721.791 311.435L802.748 241.93M721.791 311.435L833.102 187.993M721.791 311.435L859.791 186.042M838.958 305.269L721.791 311.435M775.541 216.485L729.127 215.213M729.127 215.213L765.007 219.713M777.949 245.219L721.791 311.435M721.791 311.435L714.813 225.305M721.791 311.435L600.154 245.308M759.433 460.625L721.791 311.435M859.152 426.435L838.958 305.269M721.791 311.435L717.087 253.381M721.791 311.435L598.209 182.356M721.791 311.435L590.476 186.575M721.791 311.435L627.15 163.703M765.007 219.713L600.154 245.308M600.154 245.308L583.148 207.314M838.958 305.269L775.541 216.485M859.791 440.955L721.791 311.435M714.813 225.305L721.791 311.435M721.791 311.435L777.949 245.219M840.711 439.028L721.791 311.435M775.541 216.485L721.791 311.435M721.791 311.435L628.232 224.548M721.791 311.435L640.138 223.879M721.791 311.435L632.091 226.144M721.791 311.435L630.672 216.263M717.087 253.381L721.791 311.435M729.127 215.213L721.791 311.435M721.791 311.435L600.154 245.308M721.791 311.435L729.127 215.213"/>
+<circle cx="721.791" cy="311.435" r="2.6" fill="#000000"/>
+<text x="721.791" y="311.435" dx="4" dy="-4" font-size="11">0–4</text>
+<text x="663.387" y="284.424" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">0</text>
+<text x="633.941" y="245.08" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">1</text>
+<text x="625.826" y="236.603" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">2</text>
+<text x="663.387" y="253.288" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">3</text>
+<text x="661.518" y="251.281" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">4</text>
+<text x="636.825" y="226.789" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">5</text>
+<text x="800.325" y="414.237" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">6</text>
+<text x="737.446" y="322.722" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">7</text>
+<text x="683.089" y="271.216" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">8</text>
+<text x="766.354" y="262.101" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">9</text>
+<text x="742.153" y="247.711" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">10</text>
+<text x="716.225" y="255.419" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">11</text>
+<text x="695.651" y="258.819" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">12</text>
+<text x="748.469" y="247.895" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">13</text>
+<text x="738.642" y="248.787" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">14</text>
+<text x="779.284" y="351.429" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">15</text>
+<text x="759.279" y="290.028" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">16</text>
+<text x="738.184" y="260.653" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">17,18</text>
+<text x="659.057" y="233.229" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">19</text>
+<text x="718.876" y="259.837" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">20</text>
+<text x="636.437" y="203.846" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">21</text>
+<text x="790.71" y="227.79" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">22</text>
+<text x="796.379" y="222.64" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">23</text>
+<text x="801.837" y="209.025" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">24</text>
+<text x="799.499" y="211.149" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">25</text>
+<text x="807.431" y="397.14" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">26</text>
+<text x="807.256" y="241.74" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">27</text>
+<text x="798.535" y="312.819" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">28</text>
+<text x="852.82" y="203.948" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">29</text>
+<text x="776.273" y="256.543" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">30</text>
+<text x="804.895" y="228.49" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">31</text>
+<text x="828.889" y="214.006" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">32</text>
+<text x="830.262" y="202.513" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">33</text>
+<text x="828.968" y="213.934" dy="0.35em" text-anchor="middle" font-size="9" fill="#404040">34</text>
+</g>
+<path d="M20 548h115M20 544v8M135 544v8" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="141" y="552" font-size="11">1/2</text>
+<text x="480" y="552" font-size="11" text-anchor="end">x from −1 to 1, y from −1 to 1</text>
+<path d="M520 548h115M520 544v8M635 544v8" stroke="#000000" stroke-width="1.2" fill="none"/>
+<text x="641" y="552" font-size="11">1/2</text>
+<text x="980" y="552" font-size="11" text-anchor="end">x from ≈−0.6028 to ≈0.8481, y from −24/37 to 2640/3529</text>
+<rect x="20" y="567" width="22" height="11" fill="#f4ecd2" stroke="#a0a0a0" stroke-width="0.5"/>
+<text x="50" y="576">isometry keeps orientation (det A = +1)</text>
+<rect x="20" y="583" width="22" height="11" fill="#c9dbee" stroke="#a0a0a0" stroke-width="0.5"/>
+<text x="50" y="592">isometry reverses orientation (det A = −1)</text>
+<path d="M20 604h22" fill="none" stroke="#000000" stroke-width="1.3"/>
+<text x="50" y="608">boundary of the paper and its image</text>
+<path d="M20 620h22" fill="none" stroke="#c0392b" stroke-width="1.1"/>
+<text x="50" y="624">crease: the two maps differ (46 pieces); M/V not assigned</text>
+<path d="M20 636h22" fill="none" stroke="#808080" stroke-width="0.6" stroke-dasharray="3 2"/>
+<text x="50" y="640">auxiliary edge: one map on both sides (0 pieces)</text>
+<text x="520" y="576">Cells covering a point (shading only; it saturates):</text>
+<rect x="520" y="583" width="40" height="13" fill="#d1d4d9"/>
+<text x="540" y="610" text-anchor="middle" font-size="11">1</text>
+<rect x="566" y="583" width="40" height="13" fill="#adb2bb"/>
+<text x="586" y="610" text-anchor="middle" font-size="11">2</text>
+<rect x="612" y="583" width="40" height="13" fill="#9097a2"/>
+<text x="632" y="610" text-anchor="middle" font-size="11">3</text>
+<rect x="658" y="583" width="40" height="13" fill="#78818f"/>
+<text x="678" y="610" text-anchor="middle" font-size="11">4</text>
+<rect x="704" y="583" width="40" height="13" fill="#576273"/>
+<text x="724" y="610" text-anchor="middle" font-size="11">6</text>
+<rect x="520" y="619" width="22" height="11" fill="url(#reversed)" stroke="#a0a0a0" stroke-width="0.5"/>
+<text x="550" y="628">hatched: image of a reversed cell (blue on the left)</text>
+<text x="20" y="674" font-size="10" fill="#404040">Exact data: degenerate_collapse_cert.json (SHA-256 95e66db043f14143).</text>
+<text x="20" y="688" font-size="10" fill="#404040">Coordinates are rounded to 0.001 px when drawn; the certificate, not this figure, is the mathematical object.</text>
+<text x="20" y="702" font-size="10" fill="#404040">Labels: cell indices and point indices k of a_k ↦ b_k (0-based). No layer order is drawn or implied.</text>
+</svg>

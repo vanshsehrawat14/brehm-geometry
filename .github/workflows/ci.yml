@@ -1,0 +1,66 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: ${{ matrix.os }} / ${{ matrix.compiler }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-24.04, compiler: gcc }
+          - { os: ubuntu-24.04, compiler: clang }
+          - { os: macos-15, compiler: appleclang }
+          - { os: windows-2022, compiler: msvc }
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install GMP (and, on Linux, CMake and Clang, which GitHub's image has but other runners may not)
+        run: |
+          case "$RUNNER_OS" in
+            Linux) sudo apt-get update && sudo apt-get install -y libgmp-dev cmake clang ;;
+            macOS) brew install gmp ;;
+            Windows) vcpkg install gmp:x64-windows ;;
+          esac
+      - name: Configure
+        run: |
+          args=(-DCMAKE_BUILD_TYPE=Release)
+          if [ "${{ matrix.compiler }}" = clang ]; then args+=(-DCMAKE_CXX_COMPILER=clang++); fi
+          if [ "$RUNNER_OS" = macOS ]; then args+=(-DCMAKE_PREFIX_PATH="$(brew --prefix gmp)"); fi
+          if [ "$RUNNER_OS" = Windows ]; then args+=(-DCMAKE_TOOLCHAIN_FILE="$VCPKG_INSTALLATION_ROOT/scripts/buildsystems/vcpkg.cmake" -DGMP_LIBRARY="$VCPKG_INSTALLATION_ROOT/installed/x64-windows/lib/gmp.lib" -DGMPXX_LIBRARY="$VCPKG_INSTALLATION_ROOT/installed/x64-windows/lib/gmpxx.lib"); fi
+          cmake -S . -B build "${args[@]}"
+      - name: Build
+        run: cmake --build build --config Release
+      - name: Test (examples, mutations, evaluator attacks, malformed input, 200 fuzz instances, stored certificates)
+        run: ctest --test-dir build -C Release --output-on-failure
+      - name: Install
+        run: cmake --install build --config Release --prefix "$RUNNER_TEMP/brehm" && ls "$RUNNER_TEMP/brehm/bin"
+
+  sanitizers:
+    name: ubuntu-24.04 / gcc / ASan + UBSan
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y libgmp-dev cmake
+      - run: cmake -S . -B build -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBREHM_SANITIZE=ON
+      - run: cmake --build build
+      - name: Test under sanitizers (any report aborts the process)
+        env:
+          ASAN_OPTIONS: abort_on_error=1:detect_leaks=1
+          UBSAN_OPTIONS: halt_on_error=1:print_stacktrace=1
+        run: ctest --test-dir build --output-on-failure

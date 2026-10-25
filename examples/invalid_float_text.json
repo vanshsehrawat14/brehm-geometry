@@ -1,0 +1,34 @@
+{
+ "note": "a coordinate that is not a number",
+ "expect": "invalid",
+ "domain": [
+  [
+   "-1",
+   "-1"
+  ],
+  [
+   "1",
+   "-1"
+  ],
+  [
+   "1",
+   "1"
+  ],
+  [
+   "-1",
+   "1"
+  ]
+ ],
+ "sources": [
+  [
+   "zero",
+   "0"
+  ]
+ ],
+ "targets": [
+  [
+   "0",
+   "0"
+  ]
+ ]
+}

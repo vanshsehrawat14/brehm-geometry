@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "brehm_cpp: exact construction and certification of Brehm's piecewise-congruent extensions"
+abstract: >-
+  Exact construction of Brehm's piecewise-congruent extension of a planar distance-reducing map,
+  with independent certificate checkers and a pointwise evaluator of Brehm's map.
+type: software
+authors:
+  - family-names: Sehrawat
+    given-names: Vanshdeep
+    orcid: "https://orcid.org/0009-0005-8062-1337"
+version: 1.1.1
+license: MIT
+repository-code: "https://github.com/vanshsehrawat14/brehm-geometry"
+url: "https://github.com/vanshsehrawat14/brehm-geometry"
+keywords:
+  - piecewise isometry
+  - Kirszbraun extension
+  - Brehm extension theorem
+  - exact rational arithmetic
+  - certifying algorithm
+references:
+  - type: article
+    authors:
+      - family-names: Brehm
+        given-names: Ulrich
+    title: "Extensions of distance reducing mappings to piecewise congruent mappings on R^m"
+    journal: "Journal of Geometry"
+    volume: 16
+    start: 187
+    end: 193
+    year: 1981
+    doi: 10.1007/BF01917587
